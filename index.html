@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Name</Input></title>
+        <style>
+            #main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+            }
+            #container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 50%;
+                height: 100px;
+                background-color: lightslategray;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="container">
+                <input id="input1" type="text">
+                <button id="bt1" style="margin-top: 10px;">Click</button>
+
+            </div>
+        </div>
+
+
+        <script>
+            var clk = document.getElementById('bt1')
+            var input = document.getElementById('input1')
+            clk.addEventListener('click' , textInput)
+
+            function textInput() {
+                var name = prompt("Enter your name", "Vikas Mishra")
+                input.value = name
+            }
+        </script>
+    </body>
+</html>
